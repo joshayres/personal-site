@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abouts on Josh Ayres</title>
+    <link>http://joshayres.tech/about/</link>
+    <description>Recent content in Abouts on Josh Ayres</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
+    <lastBuildDate>Tue, 12 Jan 2021 15:03:46 -0500</lastBuildDate>
+    
+	<atom:link href="http://joshayres.tech/about/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Josh Ayres</title>
+      <link>http://joshayres.tech/about/me/</link>
+      <pubDate>Tue, 12 Jan 2021 15:03:46 -0500</pubDate>
+      
+      <guid>http://joshayres.tech/about/me/</guid>
+      <description>Hi, I&amp;rsquo;m Josh, a software engineer.
+I specialize in Backend development using NodeJS or Golang. I also do some frontend work with ReactJS when working on full stack projects. You can check out some of these projects here.
+I have a deep understanding of low level programming from years of hobby game development using C and OpenGL.
+I love to learn new technologies, and I am always looking for the next biggest thing in tech.</description>
+    </item>
+    
+  </channel>
+</rss>

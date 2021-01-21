@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="I love writing javascript simulations at 4 am when I can&amp;rsquo;t sleep. This one is no different. This simulates evolution of a simple asexual species without any prey. It only needs to go find food and reproduce before it starves.
+//TODO: Put the sim here
+Check out the code here." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="http://joshayres.tech/projects/evolution/" />
+
+
+    <title>
+        
+            Evolution :: Josh Ayres  — Software Engineer
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.9655fd5f70c904b04634d3d3e59f77a994f4471ec393982efe724d829b71f6e7.css">
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#1b1c1d">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="#1b1c1d">
+    <meta name="theme-color" content="#1b1c1d">
+
+
+
+<meta itemprop="name" content="Evolution">
+<meta itemprop="description" content="I love writing javascript simulations at 4 am when I can&rsquo;t sleep. This one is no different. This simulates evolution of a simple asexual species without any prey. It only needs to go find food and reproduce before it starves.
+//TODO: Put the sim here
+Check out the code here.">
+<meta itemprop="datePublished" content="2021-01-03T23:45:39-05:00" />
+<meta itemprop="dateModified" content="2021-01-03T23:45:39-05:00" />
+<meta itemprop="wordCount" content="50">
+<meta itemprop="image" content="http://joshayres.tech/"/>
+
+
+
+<meta itemprop="keywords" content="" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://joshayres.tech/"/>
+
+<meta name="twitter:title" content="Evolution"/>
+<meta name="twitter:description" content="I love writing javascript simulations at 4 am when I can&rsquo;t sleep. This one is no different. This simulates evolution of a simple asexual species without any prey. It only needs to go find food and reproduce before it starves.
+Check out the code here."/>
+
+    <meta property="og:title" content="Evolution" />
+<meta property="og:description" content="I love writing javascript simulations at 4 am when I can&rsquo;t sleep. This one is no different. This simulates evolution of a simple asexual species without any prey. It only needs to go find food and reproduce before it starves.
+//TODO: Put the sim here
+Check out the code here." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://joshayres.tech/projects/evolution/" />
+<meta property="og:image" content="http://joshayres.tech/"/>
+<meta property="article:published_time" content="2021-01-03T23:45:39-05:00" />
+<meta property="article:modified_time" content="2021-01-03T23:45:39-05:00" /><meta property="og:site_name" content="Josh Ayres" />
+
+
+
+
+
+
+    <meta property="article:published_time" content="2021-01-03 23:45:39 -0500 EST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body class="dark-theme">
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">/home/josh</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about/me/">About</a></li><li><a href="/projects/">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="http://joshayres.tech/projects/evolution/">Evolution</a></h2>
+
+            
+            
+            
+
+            <div class="post-content">
+                <p>I love writing javascript simulations at 4 am when I can&rsquo;t sleep. This one is no different. This simulates evolution of a simple asexual species without any prey. It only needs to go find food and reproduce before it starves.</p>
+<p>Check out the code <a href="https://github.com/joshayres/evosim">here</a>.</p>
+
+<canvas id="sim" width="800" height="600"></canvas>
+
+<script>
+    var canvas = document.getElementById('sim');
+const cw = canvas.width;
+const ch = canvas.height;
+var ctx = canvas.getContext('2d');
+
+//this is a asexual simulation so no matting just mutating
+
+//helper function for creature movement
+function normilze(x, y) {
+    return Math.sqrt(x * x + y * y);
+}
+
+//if a creature touches a food it regains hp
+//evolution attributes:
+//radius - radius determines the speed inversly maybe speed = 1/radius or something else
+//hp - hp is reduced every time interval - the less base hp the shorter the reproduce timer is
+
+let creatures = [];
+let food = [];
+
+class Creature {
+    constructor(x, y, radius, hp, color) {
+        this.x = x;
+        this.y = y;
+        this.radius = radius;
+        this.hp = hp;
+        this.color = color;
+        this.reproduceTimer = this.hp + 1;
+        this.initReproduceTimer = this.reproduceTimer;
+        //these are more like direction instead of velocity maybe rename these
+        this.vx = Math.random() - .5;
+        this.vy = Math.random() - .5;
+    }
+
+    update() {
+        this.hp -= .1;
+        this.reproduceTimer -= .1;
+        if (this.reproduceTimer <= 0) {
+            this.reproduceTimer = this.initReproduceTimer;
+            let x = this.x + (Math.random() - .5) * 5;
+            let y = this.y + (Math.random() - .5) * 5;
+            let rad = this.radius + (Math.random() - .5) * 2.5;
+            let hp = this.hp + (Math.random() - .5) * 2.5;
+            creatures.push(new Creature(x, y, rad, hp, 'red'));
+        }
+        //Movement
+        //Currently this is random, maybe go to nearest food?
+        if (this.x <= 0 || this.x >= cw) {
+            this.vx *= -1;
+        }
+        if (this.y <= 0 || this.y >= ch) {
+            this.vy *= -1;
+        }
+        //10/this.radius is the speed
+        //10 is just a shitty random number
+        let len = normilze(this.vx, this.vy);
+        this.x += (this.vx / len) * 30 / this.radius;
+        this.y += (this.vy / len) * 30 / this.radius;
+
+        //check to see if we are over a food
+        for (let i = food.length - 1; i >= 0; i--) {
+            let dx = this.x - food[i].x;
+            let dy = this.y - food[i].y;
+            let dist = normilze(dx, dy);
+            //3 is food radius 10 is food hp gained
+            if (dist < this.radius + 3) {
+                this.hp += 10;
+                food.splice(i, 1);
+            }
+        }
+    }
+
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+}
+
+//Hard-coded magic number radius of 3
+class Food {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, 3, 0, Math.PI * 2, false);
+        ctx.fillStyle = 'green';
+        ctx.fill();
+    }
+}
+
+//30 is the amount of creatures
+for (var i = 0; i < 30; i++) {
+    //for some reason js doesnt like randomness in the constructor
+    //wack
+    let x = Math.random() * cw;
+    let y = Math.random() * ch;
+    let rad = Math.random() * 25 + 10;
+    let hp = Math.random() * 30 + 10;
+    creatures.push(new Creature(x, y, rad, hp, 'red'));
+}
+
+for (var i = 0; i < 30; i++) {
+    let x = Math.random() * cw;
+    let y = Math.random() * ch;
+    food.push(new Food(x, y));
+}
+
+function update() {
+    ctx.clearRect(0, 0, cw, ch);
+    for (var i = creatures.length - 1; i >= 0; i--) {
+        if (creatures[i].hp <= 0) {
+            creatures.splice(i, 1);
+        }
+        creatures[i].update();
+        creatures[i].draw();
+    }
+    for (var i = 0; i < food.length; i++) {
+        food[i].draw();
+    }
+    let newFood = Math.random();
+    if (newFood <= .25) {
+        let x = Math.random() * cw;
+        let y = Math.random() * ch;
+        food.push(new Food(x, y));
+    }
+}
+
+setInterval(update, 1000 / 60);
+</script>
+
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+            
+            
+  		</div>
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2021</span>
+            
+            <span><a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a></span><span><a href="http://joshayres.tech/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">Djordje Atlialp</a></span>
+          </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.9dd6c4fd1eb55000d257db1269676cdb26bfcc9ab1b1dc8885a54f94b97fa86e6d72e435907d76f8662e0f65472e78ab8ad69c36624d8d4a96c04c42e029d957.js" integrity="sha512-ndbE/R61UADSV9sSaWds2ya/zJqxsdyIhaVPlLl/qG5tcuQ1kH12&#43;GYuD2VHLniritacNmJNjUqWwExC4CnZVw=="></script>
+
+
+
+    </body>
+</html>
