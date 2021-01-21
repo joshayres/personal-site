@@ -1,7 +1,7 @@
 ---
 title: "Recipe"
 date: 2021-01-21T01:31:41-05:00
-draft: true
+draft: false
 ---
 
 I have been cooking quite a lot. When looking up recipes I would always get upset about how much I have to scroll down to get to the actual recipe. Because of this I wrote [justrecipe.net](https://justrecipe.net).
